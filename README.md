@@ -46,7 +46,7 @@ The dashboard website was then customized with three or more of the following:
 - Change the layout of the page.
 - Add a navigation bar that allows you to select the bar or bubble chart on the page.
 
-I added a picture of a belly button to the jumbotron and changed the colors of the text, background, and plots to be a dark theme with green accents. I rearranged the page slightly as well, adding a paragraph of explanatory text to the spot where the bar chart once stood. Now, either the bar chart or the bubble chart will appear in the large panel at the bottom depending on which option is selected from the new drop-down menu. A picture of the original, non-customized can be seen below on the left. Pictures of the new, customized website can be found
+I added a picture of a belly button to the jumbotron and changed the colors of the text, background, and plots to be a dark theme with green accents. I rearranged the page slightly as well, adding a paragraph of explanatory text to the spot where the bar chart once stood. Now, either the bar chart or the bubble chart will appear in the large panel at the bottom depending on which option is selected from the new drop-down menu. A picture of the original, non-customized can be seen below on the left. Pictures of the new, customized website can be found below at the middle (with the bar chart selected) and right (bubble chart selected).
 
 <a href="static/images/oldsite.png"><img src="static/images/oldsite_small.png"></a>
 <a href="static/images/newsitebar.png"><img src="static/images/newsitebar_small.png"></a>
