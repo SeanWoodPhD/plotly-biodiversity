@@ -1,0 +1,26 @@
+body {
+  background-color: #121212;
+}
+
+.panel > .panel-body {
+  background:#121212;
+  color: white;
+}
+
+.panel-primary {
+  /* background:#121212; */
+  border-color: #77B07B;
+}
+
+.panel > .panel-heading {
+  background-image: none;
+  background:#77B07B;
+  border-color: #77B07B;
+}
+
+.well {
+  background-image: none;
+  background:#77B07B;
+  border-color: #77B07B;
+  /* color: white; */
+}

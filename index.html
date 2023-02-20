@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belly Button Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center" style="
+        background-image: url('/static/images/bellybuttons.png');
+        height: 360px;
+        background-repeat: no-repeat;
+        background-color: #121212;
+        ">
+        <h1 style="
+        color: white;
+        padding-left: 626px;
+        ">Belly Button<br>Biodiversity<br>Dashboard</h1>
+        <p style="
+        color: white;
+        padding-left: 626px;
+        ">Use the interactive charts below<br>to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5 style="color: white">Test Subject ID No.:</h5>
+          <select id="selDataset" onchange="optionChanged()"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar">
+          
+          <p style="color: white">Roza is a biological researcher in a laboratory with an interest in
+            synthesizing proteins that mimic the flavor of beef. Her lab has partnered
+            with a company called Improbable Beef to find candidate species. Roza
+            hypothesizes that the best organism for creating the most beef-like flavor
+            is found in the human belly button. She swabbed the navels of volunteers
+            from around the country to characterize the bacterial species that colonize
+            their belly buttons. She anonymized the data and assigned each volunteer
+            an ID number. She wanted a dashboard that volunteers and researchers could
+            access to see which bacterial species live in their navels, thus we have
+            created this page. Choosing a participant ID number from the drop-down menu
+            on the left will show you the person's anonymized demographic information in
+            a table to the left. It will also generate a gauge plot to the right showing
+            how many times per week that person washes their belly button. You can choose
+            between two charts in the drop down menu below. The first will show a bar chart
+            of the top 10 bacteria found in that person's navel. The second will show a
+            bubble plot of all the different types of bacteria in the person's navel.
+            Bubble size correlates to the number of that bacteria found in the sample.<br><br></p>
+          <label for="plots" style="color: white">Choose a plot:</label>
+          <select name="plots" id="plots" onchange="optionChanged()">
+            <option value="bar">Top 10 Bacteria Cultures Bar Chart</option>
+            <option value="bubble">Bacteria Cultures Per Sample Bubble Chart</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/charts.js"></script>
+
+</body>
+
+</html>
