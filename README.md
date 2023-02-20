@@ -5,6 +5,8 @@ In this module, Roza is a biological researcher in a laboratory with an interest
 
 Throughout the module, we started designing the webpage with a drop-down menu. Upon choosing a participant ID number from the menu, that person's anonymized demographic information will then be displayed in a table.
 
+![metadata.png](static/images/metadata.png)
+
 As part of this Challenge assignment, we have added some more features to the dashboard as instructed by the deliverables below.
 
 - **Deliverable 1: Create a Horizontal Bar Chart**.
